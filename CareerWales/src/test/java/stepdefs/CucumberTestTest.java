@@ -1,10 +1,8 @@
-package options;
+package stepdefs;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by isaacthomas on 18/09/2018.
@@ -15,7 +13,7 @@ import static org.junit.Assert.*;
 @CucumberOptions(
         plugin = {"pretty"},
         glue = {"stepdefs"},
-        features = {"src/test/features"})
+        features = {"src/test/resource"})
 public class CucumberTestTest {
 
 }
