@@ -16,6 +16,7 @@ import static io.restassured.RestAssured.given;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.core.IsCollectionContaining.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 import static services.Endpoints.BASE_URL;
@@ -33,10 +34,12 @@ public class validationStepDefinitions {
     @When("^a user retrieves detail by id$")
     public void a_user_retrieves_details_by_id() {
         given().when().get(BASE_URL + "v1/programmes/").then()
-                .body("id",equalTo(("[1, 2, 11, 12, 13, 14, 15, 16, 17, 18]")))
-               // .body("name.en", equalTo(("nameEn1"));
-               // .id("id", containsString(("")));
-                .body("duration", equalTo("[{cy=Ysbeidiau Heulog..., en=Hello Sunshine...}, {cy=Ysbeidiau Heulog..., en=Hello Sunshine...}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {en=It depends on the type of support}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen neu nes bydd diweithdra yn dechrau., en=Support is available for the duration of the programme or until employment starts.}, {cy=6 Mis (ac eithrio unrhyw mewn gwaith hyfforddi) a wneir i fyny o 120-140 oriau lleoliadau gwaith a 2-8 wythnos cyflogwr hyfforddiant penodol., en=6 Months (excluding any in-work coaching) made up from 120-140 hours work placements and 2-8 weeks employer specific training }, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {cy=Cam 1 - amrywiol, Mae Cam 2 yn gwrs wythnos o hyd. , en=Phase 1 - variable, Phase 2 is a week long course. }, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}]"));
+                .body("id", hasItems(1, 2, 11, 12, 13, 14, 15, 16, 17, 18));
+//        given().when().get(BASE_URL + "v1/programmes/").then()
+//                .body("id",equalTo(("[1, 2, 11, 12, 13, 14, 15, 16, 17, 18]")))
+//               // .body("name.en", equalTo(("nameEn1"));
+//               // .id("id", containsString(("")));
+//                .body("duration", equalTo("[{cy=Ysbeidiau Heulog..., en=Hello Sunshine...}, {cy=Ysbeidiau Heulog..., en=Hello Sunshine...}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {en=It depends on the type of support}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen neu nes bydd diweithdra yn dechrau., en=Support is available for the duration of the programme or until employment starts.}, {cy=6 Mis (ac eithrio unrhyw mewn gwaith hyfforddi) a wneir i fyny o 120-140 oriau lleoliadau gwaith a 2-8 wythnos cyflogwr hyfforddiant penodol., en=6 Months (excluding any in-work coaching) made up from 120-140 hours work placements and 2-8 weeks employer specific training }, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {cy=Cam 1 - amrywiol, Mae Cam 2 yn gwrs wythnos o hyd. , en=Phase 1 - variable, Phase 2 is a week long course. }, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}]"));
 
     }
 
@@ -137,7 +140,7 @@ public class validationStepDefinitions {
                 .contentType("application/json")
                 .body(payload)
                 .when()
-                .post("http://programme-service.cw-dev-aks-ns.52.151.95.24.nip.io/v1/programmes/")
+                .post("BASE_URL + v1/programmes/")
                 .then()
                 .statusCode(201);
     }
