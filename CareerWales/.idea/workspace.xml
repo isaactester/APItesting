@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a6efeec-1ac4-43aa-9b67-37e09746f7fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/Object.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/Endpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Endpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/CucumberTestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/CucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/validationStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/validationStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/validation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/validation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/Authentication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/Authentication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/Endpoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/Endpoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/options/CucumberTestTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -246,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540258037270" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540286630593" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -422,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539783821638</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated">
+      <created>1540286222089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540286222089</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
