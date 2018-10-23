@@ -7,9 +7,9 @@ Feature: Get number of id
 
 
   Scenario: Post
-      Given I am a new user
-      When  I register my details
-      Then I should get confirmation
+    Given I am a new user
+    When  I register my details
+    Then I should get confirmation
 
 
 
