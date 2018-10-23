@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         glue = {"stepdefs"},
+        tags = {"@cw"},
         features = {"src/test/resource"})
-public class CucumberTestTest {
+public class CucumberTest {
 
 }
