@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static services.Endpoints.BASE_URL;
+import static utils.FixtureUtils.getFixture;
 
 public class validationStepDefinitions {
     private Response response;
@@ -27,8 +28,8 @@ public class validationStepDefinitions {
                 .body("id", hasItems(1, 2, 11, 12, 13, 14, 15, 16, 17, 18));
 
 
-               // .body("name.en", equalTo(("nameEn1"));
-               // .id("id", containsString(("")));
+        // .body("name.en", equalTo(("nameEn1"));
+        // .id("id", containsString(("")));
 //                .body("duration", equalTo("[{cy=Ysbeidiau Heulog..., en=Hello Sunshine...}, {cy=Ysbeidiau Heulog..., en=Hello Sunshine...}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {en=It depends on the type of support}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen neu nes bydd diweithdra yn dechrau., en=Support is available for the duration of the programme or until employment starts.}, {cy=6 Mis (ac eithrio unrhyw mewn gwaith hyfforddi) a wneir i fyny o 120-140 oriau lleoliadau gwaith a 2-8 wythnos cyflogwr hyfforddiant penodol., en=6 Months (excluding any in-work coaching) made up from 120-140 hours work placements and 2-8 weeks employer specific training }, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}, {cy=Cam 1 - amrywiol, Mae Cam 2 yn gwrs wythnos o hyd. , en=Phase 1 - variable, Phase 2 is a week long course. }, {cy=Mae cymorth ar gael dros gyfnod llawn y rhaglen., en=Support is available for the duration of the programme.}]"));
 
     }
@@ -51,67 +52,7 @@ public class validationStepDefinitions {
     @When("I register my details$")
     public void i_register_my_details() {
 
-
-
-        String payload = "{\n" +
-                "\"id\": 0,\n" +
-                "\"additionalInformation\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"cost\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"description\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"duration\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"eligibilityCriteriaSummary\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"howWouldIBenefit\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"location\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"name\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"providedBy\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\"supportAvailable\": {\n" +
-                "\"cy\": \"Ysbeidiau Heulog...\",\n" +
-                "\"en\": \"Hello Sunshine...\"\n" +
-                "},\n" +
-                "\n" +
-                "\"expiryDate\": \"2019-09-21\",\n" +
-                "\"publicationDate\": \"2018-09-21\",\n" +
-                "\"fundedByESF\": true,\n" +
-                "\"eligibility\": {\n" +
-                "\"ageRange\": {},\n" +
-                "\"communitiesFirst\": true,\n" +
-                "\"educationStatuses\": [],\n" +
-                "\"employmentSectors\": [],\n" +
-                "\"employmentStatuses\": [],\n" +
-                "\"ethnicities\": [],\n" +
-                "\"interestInStartingOwnBusiness\": true,\n" +
-                "\"localAuthorityAreaCodes\": [],\n" +
-                "\"qualifications\": [],\n" +
-                "\"redundantWithin3Months\": true,\n" +
-                "\"specialCircumstances\": [],\n" +
-                "\"specificGender\": \"MALE\"\n";
+        String payload = getFixture("user_details.json");
 
         /*
         Response response = given()
@@ -136,20 +77,20 @@ public class validationStepDefinitions {
     }
 
 
-        @Then("I should get confirmation")
-        public void i_should_get_confirmation () {
-            //assertEquals(location,response.getBody());
-            //ResponseBody body = response.getBody();
+    @Then("I should get confirmation")
+    public void i_should_get_confirmation() {
+        //assertEquals(location,response.getBody());
+        //ResponseBody body = response.getBody();
 
-            // Get Response Body as String
-            //String bodyStringValue = body.asString();
-            // Validate if Response Body Contains a specific String
-            //Assert.assertTrue(bodyStringValue.contains("id"));
-
-
-        }
+        // Get Response Body as String
+        //String bodyStringValue = body.asString();
+        // Validate if Response Body Contains a specific String
+        //Assert.assertTrue(bodyStringValue.contains("id"));
 
 
     }
+
+
+}
 
 

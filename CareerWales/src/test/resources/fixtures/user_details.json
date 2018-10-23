@@ -1,0 +1,60 @@
+{
+  "id": 0,
+  "additionalInformation": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "cost": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "description": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "duration": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "eligibilityCriteriaSummary": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "howWouldIBenefit": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "location": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "name": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "providedBy": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "supportAvailable": {
+    "cy": "Ysbeidiau Heulog...",
+    "en": "Hello Sunshine..."
+  },
+  "expiryDate": "2019-09-21",
+  "publicationDate": "2018-09-21",
+  "fundedByESF": true,
+  "eligibility": {
+    "ageRange": {},
+    "communitiesFirst": true,
+    "educationStatuses": [],
+    "employmentSectors": [],
+    "employmentStatuses": [],
+    "ethnicities": [],
+    "interestInStartingOwnBusiness": true,
+    "localAuthorityAreaCodes": [],
+    "qualifications": [],
+    "redundantWithin3Months": true,
+    "specialCircumstances": [],
+    "specificGender": "MALE"
+  }
+}
