@@ -58,15 +58,6 @@ public class validationStepDefinitions {
     @When("I register my details$")
     public void i_register_my_details() {
 
-//        JsonObject candidate = new JsonObject();
-//        candidate.addProperty("id", "0");
-//        candidate.addProperty("additionalInformation", "Isaactester");
-//       candidate.addProperty("cost", "en");
-//        candidate.addProperty("description","en");
-//        candidate.addProperty("duration","en");
-//       candidate.addProperty("eligibilityCriteriaSummary","en");
-//       candidate.addProperty("location","Wales");
-//        candidate.addProperty("name","Isaac");
 
 
         String payload = "{\n" +
