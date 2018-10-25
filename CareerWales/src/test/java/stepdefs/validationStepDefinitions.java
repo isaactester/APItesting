@@ -67,12 +67,13 @@ public class validationStepDefinitions {
         ////////////////////////////////////////////////////
 
 
-        given()
+        given().log().all()
                 .contentType("application/json")
                 .body(payload)
                 .when()
                 .post("http://programme-service.cw-dev-aks-ns.52.151.95.24.nip.io/v1/programmes/")
                 .then()
+                .log().all()
                 .statusCode(201);
     }
 
