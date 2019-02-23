@@ -1,0 +1,14 @@
+<application>
+  <component name="libraryTable">
+    <library name="cw-api-testing">
+      <CLASSES>
+        <root url="file://$USER_HOME$/cw-api-testing/cw-api-testing" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$USER_HOME$/cw-api-testing/cw-api-testing/src/main/java" />
+        <root url="file://$USER_HOME$/cw-api-testing/cw-api-testing/src/test/java" />
+      </SOURCES>
+    </library>
+  </component>
+</application>
