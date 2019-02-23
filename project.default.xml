@@ -1,0 +1,71 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="ProjectInspectionProfilesVisibleTreeState">
+        <entry key="Project Default">
+          <profile-state>
+            <expanded-state>
+              <State>
+                <id />
+              </State>
+              <State>
+                <id>Abstraction issuesJava</id>
+              </State>
+              <State>
+                <id>Assignment issuesJava</id>
+              </State>
+              <State>
+                <id>Code style issuesJava</id>
+              </State>
+              <State>
+                <id>Declaration redundancyJava</id>
+              </State>
+              <State>
+                <id>Java</id>
+              </State>
+              <State>
+                <id>Java 8Java language level migration aidsJava</id>
+              </State>
+              <State>
+                <id>Java language level migration aidsJava</id>
+              </State>
+              <State>
+                <id>Kotlin</id>
+              </State>
+              <State>
+                <id>Method metricsJava</id>
+              </State>
+              <State>
+                <id>Naming conventionsJava</id>
+              </State>
+              <State>
+                <id>Plugin DevKit</id>
+              </State>
+              <State>
+                <id>Probable bugsKotlin</id>
+              </State>
+              <State>
+                <id>Redundant constructsKotlin</id>
+              </State>
+              <State>
+                <id>Serialization issuesJava</id>
+              </State>
+              <State>
+                <id>Style issuesKotlin</id>
+              </State>
+              <State>
+                <id>Verbose or redundant code constructsJava</id>
+              </State>
+              <State>
+                <id>Visibility issuesJava</id>
+              </State>
+            </expanded-state>
+          </profile-state>
+        </entry>
+      </component>
+      <component name="PropertiesComponent">
+        <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+      </component>
+    </defaultProject>
+  </component>
+</application>
