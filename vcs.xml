@@ -18,8 +18,12 @@
           <option name="url" value="https://github.com/isaactester/cucumber.js.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/oluogg/HotelBookingAcceptanceTest.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/cucumber.js" />
+    <option name="cloneParentDir" value="$USER_HOME$/projects" />
   </component>
 </application>
